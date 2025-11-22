@@ -12,3 +12,4 @@ Project for CS4085 - COMPUTER GRAPHICS II - Tools and Techniques as part of my C
 ### Update 2:
 - Created textures for tree model
 - Created alternate versions of tree models (e.g., with/without leaves, tree stump)
+- Created rock, grass, and stalk models
