@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - ScoreText
+  - Settings
   layers:
   - Default
   - TransparentFX
