@@ -46,8 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e787af5a3de9043b7479c682a87cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  score: 0
-  textmeshpro_score: {fileID: 0}
 --- !u!136 &2592587815332384476
 CapsuleCollider:
   m_ObjectHideFlags: 0

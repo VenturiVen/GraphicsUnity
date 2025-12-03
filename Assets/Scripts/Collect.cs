@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
+using Unity.VisualScripting;
 
 public class Collect : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class Collect : MonoBehaviour
 
     TextMeshProUGUI textmeshpro_score_text;
 
+    SFX_Player player;
+
     public void Start()
     {
         textmeshpro_score = GameObject.FindGameObjectWithTag("ScoreText");
@@ -20,13 +24,16 @@ public class Collect : MonoBehaviour
 
         settings = GameObject.FindGameObjectWithTag("Settings");
         score_handler = settings.GetComponent<Score_Handler>();
+        player = settings.GetComponent<SFX_Player>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         score_handler.scoreIncrease();
-        textmeshpro_score_text.text = "Marshmallows found: " + score_handler.getScore();
-             
+        textmeshpro_score_text.text = "Marshmallows found: " + score_handler.getScore() + "/14";
+        player.PlayCLipAtPoint(gameObject.transform.position);
+
         Destroy(gameObject);
     }
+
 }
