@@ -39,3 +39,7 @@ Project for CS4085 - COMPUTER GRAPHICS II - Tools and Techniques as part of my C
 - Finished placing prefabs
 - Finished terrain painting of trees, textures, and heights
 - Bug fixes
+
+### Update 8:
+- More bug fixes
+- Implemented some player feedback
